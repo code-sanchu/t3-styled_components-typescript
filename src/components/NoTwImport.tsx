@@ -1,3 +1,5 @@
+import "twin.macro";
+
 const MyBox = tw.div`border`;
 
 const NoTwImport = () => {

@@ -1,19 +1,11 @@
 import tw, { styled, css, theme } from "twin.macro";
 
-const StyledNoProps = styled.button(() => [
-  tw`px-8 py-2 rounded duration-75 border`,
-]);
-
-const StyledWithProps = styled.button(({ a }: { a: string }) => [
-  tw`px-8 py-2 rounded duration-75 border`,
-]);
-
 interface ButtonProps {
   variant?: "primary" | "secondary";
   isSmall?: boolean;
 }
 
-const Button = styled.button(({ variant, isSmall }: ButtonProps) => [
+const Button = styled.button<ButtonProps>(({ variant, isSmall }) => [
   // The common button styles added with the tw import
   tw`px-8 py-2 rounded transform duration-75`,
 
