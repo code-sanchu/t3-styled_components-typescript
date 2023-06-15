@@ -2,6 +2,11 @@ import { type NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
 
+// mention vscode tw settings https://github.com/ben-rogerson/twin.macro/discussions/227
+// how to use the babel-plugin-twin dependency? Might not be possible?
+// rm babel-twin package inc. from config if not working
+// don't seem to need import 'twin.macro' e.g. in Logo.tsx
+
 const Home: NextPage = () => {
   return (
     <>
